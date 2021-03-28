@@ -1,3 +1,70 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Just Java</string>
+
+    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
+    <string name="name">Name</string>
+
+    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
+    <string name="toppings">Toppings</string>
+
+    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
+    <string name="topping1">Whipped cream</string>
+
+    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
+    <string name="topping2">Chocolate</string>
+
+    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
+    <string name="quantity">Quantity</string>
+
+    <!-- initial quantity value -->
+    <string name="initial_quantity_value" translatable="false">2</string>
+
+    <!-- subtraction sign -->
+    <string name="minus" translatable="false">-</string>
+
+    <!-- addition sign -->
+    <string name="plus" translatable="false">+</string>
+
+    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
+    <string name="order">Order</string>
+
+    <!--
+      Name for the order summary. It will be shown in the format of "Name: Amy" where Amy is the
+      user's name. [CHAR LIMIT=NONE]
+    -->
+    <string name="order_summary_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+
+    <!--
+      topping1 for the order summary. It will be shown in the format of
+      "Add topping1? true" or "topping1? false". [CHAR LIMIT=NONE]
+    -->
+    <string name="order_summary_topping1">Add %1$s:<xliff:g id="addTopping1" example="true">%2$b</xliff:g></string>
+
+    <!--
+      Chocolate topping for the order summary. It will be shown in the format of
+      "Add topping2? true" or "Add topping2? false". [CHAR LIMIT=NONE]
+    -->
+    <string name="order_summary_topping2">Add %1$s:<xliff:g id="addTopping2" example="true">%2$b</xliff:g></string>
+
+    <!--
+      Quantity of coffee cups for the order summary. It will be shown in the format of
+      "Quantity: 2", where 2 is the number of cups ordered. [CHAR LIMIT=NONE]
+    -->
+    <string name="order_summary_quantity">%1$s:<xliff:g id="quantity" example="2">%2$d</xliff:g></string>
+
+    <!--
+      Total price for the order summary. It will be shown in the format of
+      "Total: $10" where $10 is the price. [CHAR LIMIT=NONE]
+    -->
+    <string name="order_summary_price">Total: <xliff:g id="price" example="$10">%s</xliff:g></string>
+
+    <!-- Thank you message for the order summary. [CHAR LIMIT=NONE] -->
+    <string name="thank_you">Thank you!</string>
+
+    <!--
+      Subject line for the order summary email. It will be in the format of
+      "Just Java order for Amy" where Amy is the user's name. [CHAR LIMIT=NONE]
+    -->
+    <string name="order_summary_email_subject">Just Java order for <xliff:g id="name" example="Amy">%s</xliff:g></string>
 </resources>
